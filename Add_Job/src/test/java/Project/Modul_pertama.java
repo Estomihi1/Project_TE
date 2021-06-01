@@ -41,8 +41,8 @@ public class Modul_pertama {
 		    element2.sendKeys("admin123");
 		    element2.submit();
 		    
-		    driver.get("  https://opensource-demo.orangehrmlive.com/index.php/admin/viewJobTitleList");
-		    driver.get(" https://opensource-demo.orangehrmlive.com/index.php/admin/saveJobTitle");
+		      driver.get("  https://opensource-demo.orangehrmlive.com/index.php/admin/viewJobTitleList");
+		    driver.findElement(By.name("btnAdd")).click();
 		  // WebElement element3 = driver.findElement(By.id("menu_admin_viewAdminModule"));
 		   
 		   // element3.click();
@@ -52,11 +52,11 @@ public class Modul_pertama {
 		  
 		    WebElement element4 = driver.findElement(By.xpath("//*[@id = 'jobTitle_jobTitle']"));
 		    element4.clear();
-		    element4.sendKeys(" awwww");
+		    element4.sendKeys(" rerere");
 		    
 		    WebElement element5 = driver.findElement(By.xpath("//*[@id = 'jobTitle_jobDescription']"));
 		    element5.clear();
-		    element5.sendKeys(" dadagge");
+		    element5.sendKeys(" rororor");
 		   
 		    WebElement file = driver.findElement(By.xpath("//*[@id = 'jobTitle_jobSpec']"));
 		    file.clear();
@@ -64,10 +64,10 @@ public class Modul_pertama {
 		    
 		    WebElement element6 = driver.findElement(By.xpath("//*[@id = 'jobTitle_note']"));
 		    element6.clear();
-		    element6.sendKeys("lolloo");
+		    element6.sendKeys("ghr");
 		    
-		    WebElement element7 = driver.findElement(By.xpath("//*[@id = 'btnSave']"));
-		    element7.submit();
+		    
+		    driver.findElement(By.name("btnSave")).click();
 		    
 		    
 		  }
